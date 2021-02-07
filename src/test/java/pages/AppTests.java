@@ -23,5 +23,12 @@ public class AppTests {
 		System.out.println("Android test 5");
 		System.out.println("Android test 6");
 	}
+	
+	@Test
+	public void AndroidTest() {
+		System.out.println("Windows test 1");
+		System.out.println("Windows test 2");
+		System.out.println("Windows test 3");
+		System.out.println("Windows test 4");
 
 }
