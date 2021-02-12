@@ -252,7 +252,7 @@ public class Program1 {
 	}
 	
 	
-	@Test
+	@Test (enabled = false)
 	
 	// Write a Java program to extract a portion of a array list.
 	
@@ -271,11 +271,67 @@ public class Program1 {
 	}
 	
 	
-	@Test
+	@Test (enabled = false)
 	
 	// Write a Java program to compare two array lists.
 	
 	public void compareList() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		ArrayList<String> arr2 = new ArrayList<String>();
+		arr2.add("Nairobi");
+		arr2.add("Two");
+		arr2.add("Tokyo");
+		arr2.add("Four");
+		arr2.add("Five");
+		arr2.add("Denver");
+		arr2.add("Seven");
+		
+		ArrayList<String> arr3 = new ArrayList<String>();
+		for (String item : arr) {
+			if (arr2.contains(item)) {
+				arr3.add(item);
+			}
+		}
+		
+		System.out.println(arr3);
+	}
+	
+	
+	@Test (enabled = false)
+	
+	// Write a Java program of swap two elements in an array list.
+	
+	public void swap() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("One");
+		arr.add("Two");
+		arr.add("Three");
+		arr.add("Four");
+		arr.add("Five");
+		arr.add("Six");
+		arr.add("Seven");
+		
+		Collections.swap(arr, 1, 5);
+		System.out.println(arr);
+		
+	}
+	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to join two array lists.
+	
+	public void join() {
 		
 		ArrayList<String> arr = new ArrayList<String>();
 		arr.add("Helsinki");
@@ -295,8 +351,156 @@ public class Program1 {
 		arr2.add("Six");
 		arr2.add("Seven");
 		
+		arr.addAll(arr2);
+		System.out.println(arr);
+	}
+	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to clone an array list to another array list.
+	
+	// Note : Read about why do we do typecasting
+	
+	public void cloneList() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		ArrayList<String> arr2 = new ArrayList<String>();
+		arr2 = (ArrayList<String>) arr.clone();
+		System.out.println(arr2);
 		
 	}
 	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to empty an array list.
+	
+	public void empty() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		arr.clear();
+		System.out.println(arr);
+	}
+	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to test an array list is empty or not.
+	
+	public void isEmpty() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		if (arr.isEmpty())  {
+			System.out.println("The ArrayList is empty");
+		}
+		else {
+			System.out.println("Not empty");
+		}
+	}
+	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to trim the capacity of an array list the current list size.
+	
+	public void limit() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		arr.trimToSize();
+		System.out.println(arr);
+	}
+	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to increase the size of an array list.
+	
+	public void increase() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		arr.ensureCapacity(10);
+		System.out.println(arr);
+	}
+	
+	
+	@Test(enabled = false)
+	
+	// Write a Java program to replace the second element of a ArrayList with the specified element.
+	
+	public void replace() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		arr.set(2, "Professor");
+		System.out.println(arr);
+	}
+	
+	@Test
+	
+	// Write a Java program to print all the elements of a ArrayList using the position of the elements.
+	
+	public void print() {
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		arr.add("Helsinki");
+		arr.add("Nairobi");
+		arr.add("Tokyo");
+		arr.add("Paris");
+		arr.add("Oslo");
+		arr.add("Berlin");
+		arr.add("Denver");
+		
+		for (String item : arr) {
+			System.out.println(item);
+		}
+	}
 
 }
