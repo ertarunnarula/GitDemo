@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 import org.testng.annotations.Test;
 
-public class Program1 {
+public class ArrayListPrograms {
 	
 	@Test (enabled = false)
 	
