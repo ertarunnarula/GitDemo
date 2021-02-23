@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="collections.Program1">
+      <class name="componentPractice.dropdownPractice">
         <methods>
-          <include name="substring"/>
+          <include name="dropDown"/>
         </methods>
-      </class> <!-- collections.Program1 -->
+      </class> <!-- componentPractice.dropdownPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
